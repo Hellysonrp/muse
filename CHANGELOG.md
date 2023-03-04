@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Add temporary workaround to avoid VoiceConnection being stuck in signalling state
+- Fixed all lint errors
 
 ## [2.2.0] - 2023-02-26
 ### Added
