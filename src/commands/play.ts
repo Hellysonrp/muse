@@ -44,7 +44,11 @@ export default class implements Command {
   }
 
   public async execute(interaction: ChatInputCommandInteraction): Promise<void> {
-    const query = interaction.options.getString('query')!;
+    let query = interaction.options.getString('query')!;
+
+    if (query.startsWith('YouTube: ')) {
+      query = query.substring(9);
+    }
 
     await this.addQueryToQueue.addToQueue({
       interaction,
