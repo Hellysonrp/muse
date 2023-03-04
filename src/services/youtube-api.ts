@@ -239,7 +239,7 @@ export default class {
 
       const timestamp = timestamps[0][0];
       const seconds = parseTime(timestamp);
-      const chapterName = line.split(timestamp)[1].trim();
+      const chapterName = line.split(timestamp).join('').trim();
 
       foundTimestamps.push({name: chapterName, offset: seconds});
     }
